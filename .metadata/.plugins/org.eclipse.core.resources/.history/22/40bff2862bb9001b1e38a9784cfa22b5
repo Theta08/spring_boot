@@ -1,0 +1,7 @@
+package com.bit.persistence;
+
+//인터페이스 상속 가능.but 다중상속 가능 
+//class는 다중상속 불가능
+public interface BoardRepository {
+
+}
