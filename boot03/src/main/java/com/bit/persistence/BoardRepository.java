@@ -10,7 +10,8 @@ import org.springframework.data.repository.CrudRepository;
 import com.bit.domain.Board;
 
 public interface BoardRepository extends CrudRepository<Board, Long>{
-
+	
+	//프레임 워크 이용
 	//findBy~
 	//title 조건으로 검색
 	//where title=?
