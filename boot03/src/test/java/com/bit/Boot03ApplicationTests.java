@@ -1,0 +1,43 @@
+package com.bit;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+
+import com.bit.domain.Board;
+import com.bit.persistence.BoardRepository;
+
+@ExtendWith(SpringExtension.class)
+@SpringBootTest
+class Boot03ApplicationTests {
+
+	@Autowired
+	private BoardRepository repo;
+	
+	@Test
+	public void testCreate() {
+		System.out.println("테이블 생성 확인");
+	}
+	
+	//더비 data 200개 입력
+	@Test
+	public void testInsert200() {
+		for (int i = 0; i < 200; i++) {
+			Board board=new Board();
+			board.setTitle("제목.."+i);
+			board.setContent("내용.."+i+" 체우기");
+			board.setWriter("user0"+(i%10));
+			
+			repo.save(board);
+		}
+	}
+	
+	@Test
+	public void testByTitle() {
+		repo.findBoardByTitle("제목..155").forEach(board -> System.out.println(board));
+		
+	}
+
+}

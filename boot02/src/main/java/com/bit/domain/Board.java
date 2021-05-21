@@ -9,6 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -19,20 +20,23 @@ import lombok.ToString;
 @Setter
 @ToString
 @Entity
-@Table(name="tbl_boards")	//테이블명, 지정x시 클래스명과 동일한 명으로 만들어짐
+@Table(name = "tbl_boards") //테이블명
 public class Board {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)//디폴트,특정 DB에 맞게끔 자동증가
+	//디폴트, 특정DB에 맞게끔 자동증가
+	@GeneratedValue(strategy = GenerationType.AUTO) 
 	private Long bno;
 	private String title;
 	private String writer;
 	private String content;
 	
-	@CreationTimestamp	//게시물 작성시간
+	@CreationTimestamp //게시물 작성시간
 	private Timestamp regdate;
-	@CreationTimestamp	//게시물 최종시간
+	@UpdateTimestamp //게시물 최종 수정시간
 	private Timestamp updatedate;
 	
-	
 }
+
+
+
