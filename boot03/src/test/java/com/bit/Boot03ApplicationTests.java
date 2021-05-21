@@ -88,7 +88,7 @@ class Boot03ApplicationTests {
 	
 	@Test
 	public void OrderByPaging() {
-		Pageable paing=PageRequest.of(0, 10);
+		Pageable paing=PageRequest.of(1, 10);
 		List<Board> result=repo.findByBnoGreaterThanOrderByBnoDesc(0L,paing);
 		result.forEach(board-> System.out.println(board));
 	}
