@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="BoardRepositoryTests (2)" project="boot02" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.bit.BoardRepositoryTests" time="0.25" displayname="BoardRepositoryTests" uniqueid="[engine:junit-jupiter]/[class:com.bit.BoardRepositoryTests]">
-    <testcase name="testUpdate" classname="com.bit.BoardRepositoryTests" time="0.25" displayname="testUpdate()" uniqueid="[engine:junit-jupiter]/[class:com.bit.BoardRepositoryTests]/[method:testUpdate()]"/>
-  </testsuite>
-</testrun>
