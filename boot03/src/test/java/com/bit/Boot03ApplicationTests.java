@@ -1,5 +1,6 @@
 package com.bit;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
@@ -92,5 +93,26 @@ class Boot03ApplicationTests {
 		List<Board> result=repo.findByBnoGreaterThanOrderByBnoDesc(0L,paing);
 		result.forEach(board-> System.out.println(board));
 	}
+	
+	@Test
+	public void testByTitle2() {
+		repo.findByTitle2("15").forEach(board-> System.out.println(board));
+	}
 
+//	@Test
+//	public void testByTitle3() {
+//		repo.findByTitle3("15").forEach(arr->System.out.println(Arrays.toString(arr))
+//		);
+//	}
+	
+//	@Test
+//	public void testByPaging() {
+//		Pageable pageable = PageRequest.of(0, 10);
+//		repo.findByPage(pageable).forEach(board-> System.out.println(board));
+//	}
+//	
+//	@Test
+//	public void testByContent() {
+//		repo.findByContent("77").forEach(board -> System.out.println(board));
+//	}
 }
