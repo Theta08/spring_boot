@@ -99,20 +99,20 @@ class Boot03ApplicationTests {
 		repo.findByTitle2("15").forEach(board-> System.out.println(board));
 	}
 
-//	@Test
-//	public void testByTitle3() {
-//		repo.findByTitle3("15").forEach(arr->System.out.println(Arrays.toString(arr))
-//		);
-//	}
+	@Test
+	public void testByTitle3() {
+		repo.findByTitle3("15").forEach(arr->System.out.println(Arrays.toString(arr))
+		);
+	}
 	
-//	@Test
-//	public void testByPaging() {
-//		Pageable pageable = PageRequest.of(0, 10);
-//		repo.findByPage(pageable).forEach(board-> System.out.println(board));
-//	}
-//	
-//	@Test
-//	public void testByContent() {
-//		repo.findByContent("77").forEach(board -> System.out.println(board));
-//	}
+	@Test
+	public void testByPaging() {
+		Pageable pageable = PageRequest.of(0, 10);
+		repo.findByPage(pageable).forEach(board-> System.out.println(board));
+	}
+	
+	@Test
+	public void testByContent() {
+		repo.findByContent("77").forEach(board -> System.out.println(board));
+	}
 }
