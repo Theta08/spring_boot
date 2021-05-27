@@ -16,7 +16,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter @Setter 
+@Getter
+@Setter
 @Entity
 @Table(name="tbl_webboards")
 @EqualsAndHashCode(of="bno")
@@ -26,12 +27,16 @@ public class WebBoard {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long bno;
 	private String title;
-	private String write;
+	private String writer;
 	private String content;
-	
 	@CreationTimestamp
 	private Timestamp regdate;
 	@UpdateTimestamp
 	private Timestamp updatedate;
-
 }
+
+
+
+
+
+
