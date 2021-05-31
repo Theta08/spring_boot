@@ -4205,3 +4205,15 @@ org.eclipse.core.internal.resources.ResourceException: Marker id 1054 not found.
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 !SUBENTRY 1 org.eclipse.core.resources 4 376 2021-05-31 15:32:36.269
 !MESSAGE Marker id 1054 not found.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 16:31:09.139
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VqCycYNk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 16:31:09.140
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.VqCycYNk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 16:31:09.140
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 16:31:09.141
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VqCycYNk => OK
