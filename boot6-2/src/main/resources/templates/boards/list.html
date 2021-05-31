@@ -78,7 +78,6 @@
 <!-- end fragment -->
 <th:block layout:fragment="script">
 <script th:inline="javascript">
-
 		$(window).load(function(){
 			var msg = [[${msg}]];
 			if(msg =='success') {
@@ -117,7 +116,7 @@
 				formObj.submit();
 			});
 		});	
-	</script>
+</script>
 </th:block>
 
 </html>
