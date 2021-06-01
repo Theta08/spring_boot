@@ -111,7 +111,7 @@ public class WebReplyController {
 		board.setBno(bno);
 		return new ResponseEntity<>(getListByBoard(board),HttpStatus.OK);
 	}
-	
+	//뎃글 리스트 가져오기
 	@GetMapping("/{bno}")
 	public ResponseEntity<List<WebReply>> getReplies(
 			@PathVariable("bno")Long bno){

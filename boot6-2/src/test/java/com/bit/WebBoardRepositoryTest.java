@@ -23,10 +23,12 @@ import lombok.extern.java.Log;
 @SpringBootTest
 @Log
 @Commit
+//수정
 public class WebBoardRepositoryTest {
 
 	@Autowired
 	WebBoardRepository repo;
+	
 	
 	@Test
 	public void insertBoardDummies() {
