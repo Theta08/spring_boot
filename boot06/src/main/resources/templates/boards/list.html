@@ -51,8 +51,9 @@
 				<ul class="pagination">
 					<!--prev-->
 					<li class="page-item" th:if="${result.prevPage}">
-						<a href="#">
-						PREV[[${result.prevPage.pageNumber}+1]]</a>
+						<a th:href="${result.prevPage.pageNumber}+1">
+							PREV[[${result.prevPage.pageNumber}+1]]
+						</a>
 					</li>
 					<!-- paging-->
 					<li class="page-item" 
@@ -62,7 +63,9 @@
 					</li>
 					<!-- next -->
 					<li class="page-item active" th:if="${result.nextPage}">
-						<a href="#">NEXT[[${result.nextPage.pageNumber}+1]]</a>
+						<a th:href="${result.nextPage.pageNumber}+1">
+							NEXT[[${result.nextPage.pageNumber}+1]]
+						</a>
 					</li>
 				</ul>
 			</div>

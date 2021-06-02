@@ -68,7 +68,7 @@ public class PageMaker<T> {
 			pageList.add(startPage);
 			startPage = startPage.next();
 		}
-		this.nextPage = startPage.getPageNumber() +1 < totalPageNum ? startPage: null;
+		this.nextPage = startPage.getPageNumber() +1 <= totalPageNum ? startPage: null;
 		
 	}
 	
