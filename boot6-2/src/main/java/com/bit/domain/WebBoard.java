@@ -25,7 +25,7 @@ import lombok.ToString;
 @Table(name="tbl_webboards")
 @EqualsAndHashCode(of="bno")
 @ToString
-public class WebBoard {
+public class WebBoard { 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long bno;

@@ -26,7 +26,7 @@ import lombok.ToString;
 @EqualsAndHashCode(of="uid")
 public class Member {
 
-	@Id
+	@Id 
 	private String uid;
 	private String upw;
 	private String uname;
